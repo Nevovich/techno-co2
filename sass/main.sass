@@ -1,0 +1,60 @@
+@import "_attach.scss"
+
+.bio-form
+    &__wrapper
+        max-width: 1100px
+        margin-left: auto
+        margin-right: auto
+        width: 90%
+    &__table
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        &_item
+            display: flex
+            width: 50%
+            justify-content: space-between
+            border-style: solid
+            border-width: 0px 0px 2px 0px
+            border-color: #f1e1d8
+            padding-top: 40px
+            & img
+                margin-right: 10px
+                width: 150px
+                object-fit: contain
+        &_text
+            & label 
+                white-space: nowrap
+        &_attach
+            justify-content: start
+    &__userdata
+        & input
+            width: 100%
+            outline: 0 !important
+            border: 0
+            border-bottom: 2px solid #f1e1d8
+            font-size: 26px
+            color: black
+            padding: 22px 0
+            margin-bottom: 21px
+            &:focus
+                border-bottom: 2px solid #d29c7d
+@media screen and ( max-width: 950px )
+    .bio-form
+        &__table
+            flex-direction: column
+            &_item
+                width: 100%
+                max-width: 500px
+    
+@media screen and ( max-width: 491px )
+    .bio-form
+        &__table
+            &_item
+                flex-direction: column
+                align-items: center
+            &_text
+                text-align: center
+        &__userdata
+            & input
+                font-size: 20px

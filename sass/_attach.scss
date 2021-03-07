@@ -1,0 +1,7 @@
+.attach_wrapper .form-group{padding:0.5em;margin:1em}
+.attach_wrapper input[type=file]{width: 1px;outline:0;opacity:0;pointer-events:none;user-select:none}
+.attach_wrapper .label{flex-wrap: wrap;padding-bottom: 0 !important;width:120px;border:2px dashed grey;border-radius:5px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center}
+.attach_wrapper .label i{display:block;font-size:42px;padding-bottom:16px}
+.attach_wrapper .label i,.attach_wrapper .label .attach_title{color:grey;transition:200ms color}
+.attach_wrapper .label:hover{border:2px solid #000}
+.attach_wrapper .label:hover i,.attach_wrapper .label:hover .attach_title{color:#000}
